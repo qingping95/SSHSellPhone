@@ -29,7 +29,7 @@
 							<div>
 								<label>用户名:</label>
 								<input type="text" name="user.username" style="width: 254px; "/>
-								<s:fielderror fieldName="user.username"/>
+								<s:fielderror fieldName="usernameError"/>
 							</div>
 							<div>
 								<label>密码:</label>
@@ -52,7 +52,7 @@
 						</div>
 						<div class="bottom">
 							<input type="submit" value="注册" />
-							<a href="index.html" rel="login" class="linkform">You have an account already? Log in here</a>
+							<a href="login.jsp" rel="login" class="linkform">已经有账号？点击登录</a>
 							<div class="clear"></div>
 						</div>
 					</s:form>
@@ -62,20 +62,3 @@
 		</div>
     </body>
 </html>
- <!-- 
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>User Register</title>
-</head>
-<body>
-    <s:form action="register">
-        <s:textfield name="user.username" label="用户名" ></s:textfield>
-        <s:password name="user.password" label="密码" ></s:password>
-        <s:select list="#{'1':'男','0':'女'}" listKey="key" listValue="value"
-            name="user.gender" label="性别" value="1"></s:select>
-        <s:submit value="注册"></s:submit>
-    </s:form>
-</body>
-</html>
- -->

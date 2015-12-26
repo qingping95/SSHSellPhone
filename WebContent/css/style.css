@@ -4,6 +4,7 @@
 }
 body{
 	font-family:"Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+	background:#f4f4f4 url(../images/bg.gif) repeat top left;
 	font-size:14px;
 	color:#333;
 	text-shadow:1px 1px 1px #fff;
@@ -59,7 +60,7 @@ a.back{
 	border:1px solid #ddd;
 	margin:0 auto;
 	width:350px;
-	height:100px;
+	height:0 auto;
 	font-size:16px;
 	-moz-box-shadow:1px 1px 7px #ccc;
 	-webkit-box-shadow:1px 1px 7px #ccc;
@@ -78,7 +79,7 @@ a.back{
 }
 .form_wrapper .column{
 	width:47%;
-	float:right;
+	float:left;
 }
 form.active{
 	display:block;

@@ -79,7 +79,14 @@
             <ref bean="userManager" />
         </property>
     </bean>
-
+    
+	<!-- 用户登录的Action -->
+	<bean id="logAction" class="com.tiny.ssh.action.LoginAction" scope="prototype">
+		<property name="userManager">
+			<ref bean="userManager" />
+		</property>
+	</bean>
+	
     <!-- more bean definitions go here -->
 
 </beans>

@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>User's name error</title>
+        <title>Register Success</title>
         <meta name="description" content="Expand, contract, animate forms with jQuery wihtout leaving the page" />
         <meta name="keywords" content="expand, form, css3, jquery, animate, width, height, adapt, unobtrusive javascript"/>
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
@@ -21,9 +22,15 @@
     <body>
 		<div class="wrapper">
 			<div class="content">
-				<div id="form_wrapper" class="form_wrapper">
-					<a href="index.html">您输入的用户名已存在，点击返回重新注册</a>
+				<div id="form_wrapper" class="form_wrapper" style="background:#444">
+					<div class="bottom" style="margin:20px 20px 20px 20px">
+						您输入的用户名已存在
+						<div class="clear"></div>
+						<a href="Register.jsp">点击返回重新注册</a>
+						<div class="clear"></div>
+					</div>
 				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
     </body>

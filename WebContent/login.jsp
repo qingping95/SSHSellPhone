@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>    
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Register Success</title>
+        <title>Register</title>
         <meta name="description" content="Expand, contract, animate forms with jQuery wihtout leaving the page" />
         <meta name="keywords" content="expand, form, css3, jquery, animate, width, height, adapt, unobtrusive javascript"/>
-		<meta http-equiv="refresh" content="1; url=http://localhost:8080/SSHProject/login.jsp" />
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/cufon-yui.js" type="text/javascript"></script>
@@ -23,7 +23,26 @@
 		<div class="wrapper">
 			<div class="content">
 				<div id="form_wrapper" class="form_wrapper">
-					<h3>Register Success!</h3>
+					<s:form class="register active" action="register">
+						<h3>Log in</h3>
+						<div class="column" style="margin:0 0 20px 0">
+							<div>
+								<label>用户名:</label>
+								<input type="text" name="user.username" style="width: 254px; "/>
+								<s:fielderror fieldName="user.username"/>
+							</div>
+							<div>
+								<label>密码:</label>
+								<input type="password" name="user.password" style="width: 254px; "/>
+								<s:fielderror fieldName="user.password"/>
+							</div>
+						</div>
+						<div class="bottom">
+							<input type="submit" value="登录" />
+							<a href="Register.jsp" rel="login" class="linkform">未注册账号？点击注册</a>
+							<div class="clear"></div>
+						</div>
+					</s:form>
 				</div>
 				<div class="clear"></div>
 			</div>

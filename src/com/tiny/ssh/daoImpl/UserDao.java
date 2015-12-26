@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.tiny.ssh.beans.User;
 import com.tiny.ssh.dao.BaseDao;
 
 public class UserDao implements BaseDao {
@@ -41,5 +42,15 @@ public class UserDao implements BaseDao {
     public void saveObject(Object obj) throws HibernateException {
         this.getCurrentSession().save(obj);
     }
+
+	@Override
+	public boolean isCorrect(User user) {
+		// TODO Auto-generated method stub
+		String sql = "select * from user where username='"+user.getUsername()+"' and password='"+user.getPassword()+"';";
+		Query query = this.getCurrentSession().createSQLQuery(sql);
+		List list = query.list();
+		if(list.size() == 1) return true;
+		else return false;
+	}
 
 }

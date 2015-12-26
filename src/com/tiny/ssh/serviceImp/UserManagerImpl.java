@@ -29,5 +29,10 @@ public class UserManagerImpl implements UserManager {
 		// TODO Auto-generated method stub
 		return dao.isExist(username);
 	}
+	@Override
+	public boolean isCorrect(User user) {
+		// TODO Auto-generated method stub
+		return dao.isCorrect(user);
+	}
 
 }
