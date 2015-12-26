@@ -32,4 +32,13 @@
             <message>密码输入不合法，必须为长度在6~16之间的数字或者字母</message>
         </field-validator>
     </field>
+    
+    <!-- 添加对重复密码的校验 -->
+    <field name="user.rpassword">
+        <field-validator type="fieldexpression">
+            <param name="expression"><![CDATA[user.rpassword==user.password]]></param>
+            <message>两次密码不一致</message>
+        </field-validator>
+    </field>
+    
 </validators>

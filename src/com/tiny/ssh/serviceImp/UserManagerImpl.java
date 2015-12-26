@@ -15,12 +15,19 @@ public class UserManagerImpl implements UserManager {
     public void setDao(BaseDao dao) {
         this.dao = dao;
     }
-
+    public BaseDao getDao(){
+    	return dao;
+    }
     @Override
     public void regUser(UserForm userForm) throws HibernateException {
         User user = new User();
         BeanUtils.copyProperties(userForm, user);
         dao.saveObject(user);
     }
+	@Override
+	public boolean isExist(String username) {
+		// TODO Auto-generated method stub
+		return dao.isExist(username);
+	}
 
 }

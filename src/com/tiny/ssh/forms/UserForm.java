@@ -4,6 +4,7 @@ public class UserForm {
 
     private String username;
     private String password;
+    private String rpassword;
     private int gender;
 
     public String getUsername() {
@@ -20,6 +21,14 @@ public class UserForm {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getRpassword() {
+        return rpassword;
+    }
+
+    public void setRpassword(String rpassword) {
+        this.rpassword = rpassword;
     }
 
     public int getGender() {

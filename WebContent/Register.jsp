@@ -37,12 +37,17 @@
 								<s:fielderror fieldName="user.password"/>
 							</div>
 							<div>
+								<label>重复密码:</label>
+								<input type="password" name="user.rpassword" style="width: 254px; "/>
+								<s:fielderror fieldName="user.rpassword"/>
+							</div>
+							<div>
 								<label>性别:</label>
 								<select name="user.gender">
 									<option value="1">男</option>
 									<option value="0">女</option>
 								</select>
-								<span class="error">This is an error</span>
+								<span class="error" >This is an error</span>
 							</div>
 						</div>
 						<div class="bottom">

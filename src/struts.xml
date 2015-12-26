@@ -9,7 +9,7 @@
         <action name="register" class="regAction">
         	<result name="input">Register.jsp</result>
             <result name="success">success.jsp</result>
-            <result name="error">fail.jsp</result>
+            <result name="error">usernameError.jsp</result>
         </action>
     </package>
 </struts>

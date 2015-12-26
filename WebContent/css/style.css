@@ -59,16 +59,17 @@ a.back{
 	border:1px solid #ddd;
 	margin:0 auto;
 	width:350px;
+	height:100px;
 	font-size:16px;
 	-moz-box-shadow:1px 1px 7px #ccc;
 	-webkit-box-shadow:1px 1px 7px #ccc;
 	box-shadow:1px 1px 7px #ccc;
 }
 .form_wrapper h3{
-	padding:20px 30px 20px 30px;
+	padding:20px 20px 20px 30px;
 	background-color:#444;
 	color:#fff;
-	font-size:25px;
+	font-size: 23px;
 	border-bottom:1px solid #ddd;
 }
 .form_wrapper form{
@@ -77,7 +78,7 @@ a.back{
 }
 .form_wrapper .column{
 	width:47%;
-	float:left;
+	float:right;
 }
 form.active{
 	display:block;
@@ -175,6 +176,14 @@ form.forgot_password{
 	margin:2px 5px 0px 0px;
 }
 .form_wrapper span.error{
+	visibility:hidden;
+	color:red;
+	font-size:11px;
+	font-style:italic;
+	display:block;
+	margin:4px 30px;
+}
+.form_wrapper fielderror.error{
 	visibility:hidden;
 	color:red;
 	font-size:11px;

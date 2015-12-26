@@ -1,6 +1,11 @@
 package com.tiny.ssh.action;
 
+import java.util.List;
+
+import org.apache.catalina.connector.Request;
+
 import com.opensymphony.xwork2.ActionSupport;
+import com.tiny.ssh.beans.User;
 import com.tiny.ssh.forms.UserForm;
 import com.tiny.ssh.service.UserManager;
 
@@ -27,14 +32,12 @@ public class RegisterAction extends ActionSupport {
     }
 
     public String execute() {
-        try {
-            userManager.regUser(user);
-            return SUCCESS;
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ERROR;
-        }
+    	if(userManager.isExist(user.getUsername())) {
+    		return ERROR;
+    	}else{
+    		userManager.regUser(user);
+    		return SUCCESS;
+    	}
     }
 
 }

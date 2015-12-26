@@ -1,6 +1,9 @@
 package com.tiny.ssh.daoImpl;
 
+import java.util.List;
+
 import org.hibernate.HibernateException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +27,19 @@ public class UserDao implements BaseDao {
         return sessionFactory.openSession();  // ÐèÒªÓÃopenSession()
     }
     
-    @Override
+	@Override
+	public boolean isExist(String username) {
+		// TODO Auto-generated method stub
+		String sql = "select * from user where username = '"+username+"';";
+		Query query=this.getCurrentSession().createSQLQuery(sql);
+		List list = query.list();
+		if(list.size() > 0) return true;
+		else return false;
+	}
+
+	@Override
     public void saveObject(Object obj) throws HibernateException {
-        this.getCurrentSession().save(obj);  
+        this.getCurrentSession().save(obj);
     }
 
 }
