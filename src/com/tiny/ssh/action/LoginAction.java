@@ -28,13 +28,25 @@ public class LoginAction extends ActionSupport {
         this.userManager = userManager;
     }
 
-    public String execute() {
+//    public String execute() {
+//    	User curuser = new User();
+//        BeanUtils.copyProperties(user, curuser);
+//    	if(userManager.isCorrect(curuser)){
+//    		return SUCCESS;
+//    	}else{
+//    		return ERROR;
+//    	}
+//    }
+
+	@Override
+	public void validate() {
+		// TODO Auto-generated method stub
+		super.validate();
     	User curuser = new User();
         BeanUtils.copyProperties(user, curuser);
-    	if(userManager.isCorrect(curuser)){
-    		return SUCCESS;
-    	}else{
-    		return ERROR;
+        if(!userManager.isCorrect(curuser)){
+        	addFieldError("usernameError", "用户名或密码错误");
     	}
-    }
+		
+	}
 }

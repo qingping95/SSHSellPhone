@@ -23,13 +23,13 @@
 		<div class="wrapper">
 			<div class="content">
 				<div id="form_wrapper" class="form_wrapper">
-					<s:form class="register active" action="register">
+					<s:form class="register active" action="login">
 						<h3>Log in</h3>
 						<div class="column" style="margin:0 0 20px 0">
 							<div>
 								<label>用户名:</label>
 								<input type="text" name="user.username" style="width: 254px; "/>
-								<s:fielderror fieldName="user.username"/>
+								<s:fielderror fieldName="usernameError"/>
 							</div>
 							<div>
 								<label>密码:</label>
