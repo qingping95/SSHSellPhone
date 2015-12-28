@@ -9,4 +9,5 @@ public interface BaseDao {
     public void saveObject(Object obj) throws HibernateException;
     public boolean isExist(String username);
     public boolean isCorrect(User user);
+    public <T> List<T> getObject(String sql);
 }

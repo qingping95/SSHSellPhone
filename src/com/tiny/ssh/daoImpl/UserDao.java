@@ -53,4 +53,15 @@ public class UserDao implements BaseDao {
 		else return false;
 	}
 
+	/* (non-Javadoc)
+	 * 根据sql语句对scheme中的数据表进行查询
+	 * @see com.tiny.ssh.dao.BaseDao#getObject(java.lang.String)
+	 */
+	@Override
+	public <T> List<T> getObject(String sql) {
+		// TODO Auto-generated method stub
+		Query query = this.getCurrentSession().createSQLQuery(sql);
+		return query.list();
+	}
+
 }

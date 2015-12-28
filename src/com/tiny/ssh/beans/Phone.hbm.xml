@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.tiny.ssh.beans">
+    <class name="Phone" table="phone">
+        <id name="proID" column="proID">
+            <generator class="native"></generator>
+        </id>
+        <property name="model" column="model" type="java.lang.String"
+            not-null="true"></property>
+        <property name="brand" column="brand" type="java.lang.String"
+            not-null="true" />
+        <property name="colorNum" column="colorNum" type="java.lang.Integer" />
+        <property name="launchDate" column="launchDate" type="java.lang.Integer" />
+        <property name="prise" column="prise" type="java.lang.Integer" />
+        <property name="style" column="style" type="java.lang.Integer" />
+        <property name="imageResolution" column="imageResolution" type="java.lang.Integer" />
+        <property name="RAM" column="RAM" type="java.lang.Integer" />
+        <property name="ROM" column="ROM" type="java.lang.Integer" />
+        <property name="camera" column="camera" type="java.lang.Integer" />
+        <property name="bluetooth" column="bluetooth" type="java.lang.Integer" />
+        <property name="WLAN" column="WLAN" type="java.lang.Integer" />
+        <property name="batteryCapacity" column="batteryCapacity" type="java.lang.Integer" />
+        <property name="thickness" column="thickness" type="java.lang.Double" />
+        <property name="weight" column="weight" type="java.lang.Double" />
+        <property name="screenSize" column="screenSize" type="java.lang.Double" />
+    </class>
+</hibernate-mapping>
