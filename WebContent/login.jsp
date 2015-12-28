@@ -29,12 +29,12 @@
 							<div>
 								<label>用户名:</label>
 								<input type="text" name="user.username" style="width: 254px; "/>
-								<s:fielderror fieldName="usernameError"/>
+								<s:fielderror style="float:right" fieldName="usernameError"/>
 							</div>
 							<div>
 								<label>密码:</label>
 								<input type="password" name="user.password" style="width: 254px; "/>
-								<s:fielderror fieldName="user.password"/>
+								<s:fielderror style="float:right" fieldName="user.password"/>
 							</div>
 						</div>
 						<div class="bottom">

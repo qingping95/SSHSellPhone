@@ -4,7 +4,7 @@
 <html>
     <head>    
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Register Success</title>
+        <title>Success</title>
         <meta name="description" content="Expand, contract, animate forms with jQuery wihtout leaving the page" />
         <meta name="keywords" content="expand, form, css3, jquery, animate, width, height, adapt, unobtrusive javascript"/>
 		<meta http-equiv="refresh" content="1; url=http://localhost:8080/SSHProject/login.jsp" />
@@ -23,7 +23,7 @@
 		<div class="wrapper">
 			<div class="content">
 				<div id="form_wrapper" class="form_wrapper">
-					<h3>Register Success!</h3>
+					<h3>Success!</h3>
 				</div>
 				<div class="clear"></div>
 			</div>
