@@ -5,9 +5,7 @@
 
 <hibernate-mapping package="com.tiny.ssh.beans">
     <class name="Phone" table="phone">
-        <id name="proID" column="proID">
-            <generator class="native"></generator>
-        </id>
+        <id name="proID" column="proID"></id>
         <property name="model" column="model" type="java.lang.String"
             not-null="true"></property>
         <property name="brand" column="brand" type="java.lang.String"

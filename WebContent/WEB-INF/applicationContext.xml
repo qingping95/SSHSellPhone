@@ -44,6 +44,7 @@
         <property name="mappingResources">
             <list>
                 <value>com/tiny/ssh/beans/User.hbm.xml</value>
+                <value>com/tiny/ssh/beans/Phone.hbm.xml</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -87,6 +88,12 @@
 		</property>
 	</bean>
 	
+	<!-- 测试用的action -->
+	<bean id="searchTest" class="com.tiny.ssh.action.SearchUserInfo">
+		<property name="userManager">
+			<ref bean="userManager" />
+		</property>
+	</bean>
     <!-- more bean definitions go here -->
 
 </beans>

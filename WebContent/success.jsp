@@ -7,7 +7,7 @@
         <title>Success</title>
         <meta name="description" content="Expand, contract, animate forms with jQuery wihtout leaving the page" />
         <meta name="keywords" content="expand, form, css3, jquery, animate, width, height, adapt, unobtrusive javascript"/>
-		<meta http-equiv="refresh" content="1; url=http://localhost:8080/SSHProject/login.jsp" />
+		<meta http-equiv="refresh" content="1; url=http://localhost:8080/SSHSellPhone/login.jsp" />
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/cufon-yui.js" type="text/javascript"></script>

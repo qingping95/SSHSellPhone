@@ -16,5 +16,8 @@
         	<result name="success">success.jsp</result>
         	<result name="error">fail.jsp</result>
         </action>
+        <action name="searchTest" class="searchTest" method="searchStart">
+        	<result name="searchEnd">phoneInfo.jsp</result>
+        </action> 
     </package>
 </struts>

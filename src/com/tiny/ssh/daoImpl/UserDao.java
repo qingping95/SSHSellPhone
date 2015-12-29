@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
+import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.tiny.ssh.beans.User;
 import com.tiny.ssh.dao.BaseDao;
 
-public class UserDao implements BaseDao {
+public class UserDao<T> implements BaseDao {
     
     private SessionFactory sessionFactory;  
       
@@ -58,10 +59,10 @@ public class UserDao implements BaseDao {
 	 * @see com.tiny.ssh.dao.BaseDao#getObject(java.lang.String)
 	 */
 	@Override
-	public <T> List<T> getObject(String sql) {
+	public SQLQuery getObject(String sql) {
 		// TODO Auto-generated method stub
-		Query query = this.getCurrentSession().createSQLQuery(sql);
-		return query.list();
+		System.out.println(sql);
+		return this.getCurrentSession().createSQLQuery(sql);
 	}
 
 }

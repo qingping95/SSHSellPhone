@@ -11,4 +11,5 @@ public interface UserManager<T> {
     public boolean isCorrect(User user);
     public List<T> queryBrand(String Brand);
     public List<T> querySPObject(String Brand, String model);
+    public User getUser(String username);
 }
