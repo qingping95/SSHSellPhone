@@ -19,5 +19,8 @@
         <action name="searchTest" class="searchTest" method="searchStart">
         	<result name="searchEnd">phoneInfo.jsp</result>
         </action> 
+        <action name="index" class="indexAction">
+        	<result name="success">index.jsp</result>
+        </action>
     </package>
 </struts>

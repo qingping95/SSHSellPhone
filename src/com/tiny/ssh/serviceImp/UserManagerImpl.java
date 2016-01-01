@@ -60,4 +60,10 @@ public class UserManagerImpl<T> implements UserManager<T> {
 		String sql = "select * from user where userName='"+username+"'";
 		return (User)dao.getObject(sql).addEntity("user", User.class).list().get(0);
 	}
+	@Override
+	public List<T> querySomePhone(int num) {
+		// TODO Auto-generated method stub
+		String sql = "select * from phone "+"order by rand() "+"limit "+num;
+		return dao.getObject(sql).addEntity("phone", Phone.class).list();
+	}
 }

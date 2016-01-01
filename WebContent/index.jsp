@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>手机卖场 | Ecommerce</title>
 
@@ -27,7 +27,7 @@
 	href="plugins/switcher/css/color5.css" title="color5" media="all" />
 
 </head>
-<body class="animated-css" data-scrolling-animations="false">
+<body class="animated-css" data-scrolling-animations="false" >
 	<div class="sp-body">
 
 		<!-- Loader Landing Page -->
@@ -42,46 +42,6 @@
 			<div class="header-top">
 				<div class="container">
 					<ul class="nav nav-pills nav-top navbar-right">
-
-						<li class="dropdown my-cart"><a data-toggle="dropdown"
-							class="dropdown-toggle" href="#"><i
-								class="fa fa-shopping-cart"></i></a>
-							<ul role="menu" class="dropdown-menu header-cart_product_list">
-								<li class="added-items">
-									<div class="header-cart_product_list_item clearfix">
-										<a class="item-preview" href="product-details.html"><img
-											src="images/cart-img-1.jpg" alt="Product"></a>
-										<h4>
-											<a
-												class="font-additional font-weight-normal hover-focus-color cart-product-title"
-												href="product-details.html">Stylish Wear</a>
-										</h4>
-										<span class="item-cat font-main font-weight-normal"><a
-											class="hover-focus-color cart-product-category" href="#">Men</a></span>
-										<span
-											class="item-price font-additional font-weight-normal customColor">37.15
-											USD</span> <a class="item-del hover-focus-color" href="#"><i
-											class="fa fa-trash-o"></i></a>
-									</div>
-								</li>
-								<li class="added-items">
-									<div class="header-cart_product_list_item clearfix">
-										<a class="item-preview" href="product-details.html"><img
-											src="images/cart-img-2.jpg" alt="Product"></a>
-										<h4>
-											<a
-												class="font-additional font-weight-normal hover-focus-color cart-product-title"
-												href="product-details.html">Bag</a>
-										</h4>
-										<span class="item-cat font-main font-weight-normal"><a
-											class="hover-focus-color cart-product-category" href="#">Accessories</a></span>
-										<span
-											class="item-price font-additional font-weight-normal customColor">60.10
-											USD</span> <a class="item-del hover-focus-color" href="#"><i
-											class="fa fa-trash-o"></i></a>
-									</div>
-								</li>
-							</ul></li>
 					</ul>
 				</div>
 				<div class="container-fluid trigger-container">
@@ -101,7 +61,7 @@
 									<label class="sr-only" for="searchQuery">Product Name
 										...</label> <input type="search"
 										class="product-search_field font-main font-weight-normal"
-										id="searchQuery" placeholder="Product Name ...">
+										id="searchQuery" placeholder="搜索产品品牌、型号">
 								</div>
 								<button type="submit"
 									class="product-search_btn hvr-bounce-to-right">
@@ -127,17 +87,12 @@
 				data-after-init-delay="4000" data-after-move-delay="500"
 				data-stop-on-hover="true">
 				<div class="item slide1">
-					<img src="images/main-slider/slide-1.jpg" alt="Slide 1">
+					<img src="images/main-slider/Iphone6s.jpg" alt="Slide 1">
 					<div class="main-slider_content">
-						<div class="main-slider_smalltitle main-slider_zoomIn animated"
-							style="visibility: hidden;">
-							<span class="customColor">get upto 30% offer for order
-								over $400!</span>
-						</div>
 						<h3
 							class="main-slider_title font-additional font-weight-bold main-slider_fadeInLeft animated"
-							style="visibility: hidden;">
-							BIGGEST FASHION 2015<br> COLLECTION
+							style="visibility: hidden; ">
+							唯一不同<br> 是处处都不同
 						</h3>
 						<div class="main-slider_row">
 							<div class="line-separator main-slider_zoomIn animated"
@@ -148,14 +103,12 @@
 						<div class="main-slider_buttons">
 							<a href="#"
 								class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_fadeInLeftBig animated before-bg"
-								style="visibility: hidden;">SHOP NOW</a> <a href="#"
-								class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_fadeInRightBig animated before-bg"
-								style="visibility: hidden;">PURCHASE</a>
+								style="visibility: hidden;color:#000">立即购买</a>
 						</div>
 					</div>
 				</div>
 				<div class="item slide2">
-					<img src="images/main-slider/slide-2.jpg" alt="Slide 2">
+					<img src="images/main-slider/Samsung.jpg" alt="Slide 2">
 					<div class="main-slider_content">
 						<div class="main-slider_row">
 							<div class="line-separator main-slider_zoomIn animated"
@@ -165,40 +118,31 @@
 						</div>
 						<div
 							class="main-slider_smalltitle color-main main-slider_fadeInRight animated"
-							style="visibility: hidden;">HOT COLLECTION</div>
+							style="visibility: hidden;">最热 新品</div>
 						<h3
 							class="main-slider_title font-additional font-weight-bold text-shadow color-main main-slider_fadeInLeft animated"
-							style="visibility: hidden;">AUTUMN WINTER 2015/2016</h3>
+							style="visibility: hidden;">秋天 冬天  2015/2016</h3>
 						<div class="main-slider_buttons">
 							<a href="#"
 								class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_slideInUp animated before-bg"
-								style="visibility: hidden;">SHOP NOW</a>
+								style="visibility: hidden;">立即购买</a>
 						</div>
 					</div>
 				</div>
 				<div class="item slide3">
-					<img src="images/main-slider/slide-3.jpg" alt="Slide 3">
+					<img src="images/main-slider/Mi4c.jpg" alt="Slide 3">
 					<div class="main-slider_content">
-
-						<h3
-							class="main-slider_title font-additional font-weight-normal text-shadow main-slider_fadeInLeft animated"
-							style="visibility: hidden; padding-bottom: 5px;">style &amp;
-							comfort</h3>
+						<br/><br/><br/><br/><br/><br/><br/><br/>
 						<div class="main-slider_row">
 							<div class="line-separator main-slider_zoomIn animated"
 								style="visibility: hidden;">
 								<img src="images/white-seperator.png" alt="seperator">
 							</div>
 						</div>
-						<span
-							class="main-slider_desc font-main main-slider_fadeInRight animated"
-							style="visibility: hidden;">Proin est Pellentesque risus
-							magna vulputate vitae sodales aliquam morb non sem lacus porta
-							molis. Nunc condimentum metus</span>
 						<div class="main-slider_buttons">
 							<a href="#"
 								class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_slideInUp animated before-bg"
-								style="visibility: hidden;">SHOP NOW</a>
+								style="visibility: hidden; color:#000">马上购买</a>
 						</div>
 					</div>
 				</div>
@@ -208,221 +152,111 @@
 		<br/>
 		<br/>
 		<br/>
-		<section id="collection" class="borderTopSeparator">
+		<section id="collection" class="borderTopSeparator" >
 			<div class="container relative">
 
 				<div class="isotopeBox">
 					<h2
 						class="title font-additional font-weight-bold text-uppercase wow fadeInUp"
-						data-wow-duration="2s">BEST SELLERS</h2>
+						data-wow-duration="2s">最热手机</h2>
 					<span
 						class="subTitle font-additional font-weight-normal text-uppercase wow fadeIn"
-						data-wow-duration="2s">NEW ARRIVAL / TRENDY COLLECTION</span>
+						data-wow-duration="2s">给你好看 / 给你好用</span>
 					<div class="line-seperatorBox clearfix">
 						<div class="line-seperator">
 							<img src="images/seperator.png" alt="seperator">
 						</div>
-						<ul id="filter" class="product-filter clearfix">
+						<ul id="filter" class="product-filter clearfix">	
 							<li><a href="#"
 								class="current btn font-additional font-weight-normal text-uppercase before-bg hvr-bounce-to-right"
-								data-filter=".newproducts">NEW PRODUCTS</a></li>
+								data-filter=".newproducts">最新上架</a></li>
 							<li><a href="#"
 								class="btn font-additional font-weight-normal text-uppercase before-bg hvr-bounce-to-right"
-								data-filter=".popular">POPULAR</a></li>
+								data-filter=".popular">最流行</a></li>
 							<li><a href="#"
 								class="btn font-additional font-weight-normal text-uppercase before-bg hvr-bounce-to-right"
-								data-filter=".discount">DISCOUNT</a></li>
+								data-filter=".discount">最实用</a></li>
 						</ul>
 						<div class="isotope-frame">
 							<div class="isotope-filter">
-								<div class="isotope-item  newproducts discount">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/4.jpg"
-												alt="Product"> <a class="product-item_link"
-												href="product-details.html"> <span
-												class="product-item_sale color-main font-additional customBgColor circle">-15%</span>
+								<s:iterator value="#session.poplist" var="phone" >
+									<div class="isotope-item newproducts popular">
+										<div class="product-item hvr-underline-from-center">
+											<div class="product-item_body">
+												<img class="product-item_image" src="images/products/${phone.proID%14+3}.jpg"
+													alt="Product"> 
+												<div class="product-sidebar">
+													<a href="#" class="buy"> <span>立即购买</span></a>
+													<a href="product-details.html" class="info"> 
+														<span>查看信息</span>
+													</a>
+												</div>
+											</div>
+											<a href="product-details.html" class="product-item_footer">
+												<div
+													class="product-item_title font-additional font-weight-bold text-center text-uppercase">
+													${phone.brand} ${phone.model}
+												</div>
+												<div
+													class="product-item_price font-additional font-weight-normal customColor">
+													RMB ${phone.prise}
+												</div>
 											</a>
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span></a>
-												<a href="product-details.html" class="info"> <span>QUICK VIEW</span></a> 
-												<a href="#" class="favorites"> <span>ADD TO FAVORITE</span> </a>
-											</div>
 										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">WOMEN
-												CAP</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">
-												$240.00 <span>$265.00</span>
-											</div>
-										</a>
 									</div>
-								</div>
-								<div class="isotope-item  newproducts popular">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/5.jpg"
-												alt="Product"> 
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span>
-												</a> <a href="product-details.html" class="info"> <span>QUICK
-														VIEW</span>
-												</a> <a href="#" class="favorites"> <span>ADD TO
-														FAVORITE</span>
-												</a>
+								</s:iterator>
+								<s:iterator value="#session.dislist" var="phone" >
+									<div class="isotope-item popular discount">
+										<div class="product-item hvr-underline-from-center">
+											<div class="product-item_body">
+												<img class="product-item_image" src="images/products/${phone.proID%14+3}.jpg"
+													alt="Product"> 
+												<div class="product-sidebar">
+													<a href="#" class="buy"> <span>立即购买</span></a>
+													<a href="product-details.html" class="info"> 
+														<span>查看信息</span>
+													</a>
+												</div>
 											</div>
+											<a href="product-details.html" class="product-item_footer">
+												<div
+													class="product-item_title font-additional font-weight-bold text-center text-uppercase">
+													${phone.brand} ${phone.model}
+												</div>
+												<div
+													class="product-item_price font-additional font-weight-normal customColor">
+													RMB ${phone.prise}
+												</div>
+											</a>
 										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">BLACK
-												DRESS</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">$560.00</div>
-										</a>
 									</div>
-								</div>
-								<div class="isotope-item  newproducts discount">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/6.jpg"
-												alt="Product"> 
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span>
-												</a> <a href="product-details.html" class="info"> <span>QUICK
-														VIEW</span>
-												</a> <a href="#" class="favorites"> <span>ADD TO
-														FAVORITE</span>
-												</a>
+								</s:iterator>
+								<s:iterator value="#session.newlist" var="phone" >
+									<div class="isotope-item discount newproducts">
+										<div class="product-item hvr-underline-from-center">
+											<div class="product-item_body">
+												<img class="product-item_image" src="images/products/${phone.proID%14+3}.jpg"
+													alt="Product"> 
+												<div class="product-sidebar">
+													<a href="#" class="buy"> <span>立即购买</span></a>
+													<a href="product-details.html" class="info"> 
+														<span>查看信息</span>
+													</a>
+												</div>
 											</div>
+											<a href="product-details.html" class="product-item_footer">
+												<div
+													class="product-item_title font-additional font-weight-bold text-center text-uppercase">
+													${phone.brand} ${phone.model}
+												</div>
+												<div
+													class="product-item_price font-additional font-weight-normal customColor">
+													RMB ${phone.prise}
+												</div>
+											</a>
 										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">STYLISH
-												WEAR</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">$175.00</div>
-										</a>
 									</div>
-								</div>
-								<div class="isotope-item  newproducts popular">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/7.jpg"
-												alt="Product"> 
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span>
-												</a> <a href="product-details.html" class="info"> <span>QUICK
-														VIEW</span>
-												</a> <a href="#" class="favorites"> <span>ADD TO
-														FAVORITE</span>
-												</a>
-											</div>
-										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">LEATHER
-												JACKET</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">$300.00</div>
-										</a>
-									</div>
-								</div>
-								<div class="isotope-item  popular">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/8.jpg"
-												alt="Product"> 
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span>
-												</a> <a href="product-details.html" class="info"> <span>QUICK
-														VIEW</span>
-												</a> <a href="#" class="favorites"> <span>ADD TO
-														FAVORITE</span>
-												</a>
-											</div>
-										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">GRAY
-												COAT</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">
-												$240.00 <span>$250.00</span>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="isotope-item  discount">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/9.jpg"
-												alt="Product"> 
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span>
-												</a> <a href="product-details.html" class="info"> <span>QUICK
-														VIEW</span>
-												</a> <a href="#" class="favorites"> <span>ADD TO
-														FAVORITE</span>
-												</a>
-											</div>
-										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">MEN
-												COAT</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">$500.00</div>
-										</a>
-									</div>
-								</div>
-								<div class="isotope-item  popular">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/10.jpg"
-												alt="Product"> 
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span>
-												</a> <a href="product-details.html" class="info"> <span>QUICK
-														VIEW</span>
-												</a> <a href="#" class="favorites"> <span>ADD TO
-														FAVORITE</span>
-												</a>
-											</div>
-										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">STYLISH
-												WEAR</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">$175.00</div>
-										</a>
-									</div>
-								</div>
-								<div class="isotope-item discount">
-									<div class="product-item hvr-underline-from-center">
-										<div class="product-item_body">
-											<img class="product-item_image" src="images/products/11.jpg"
-												alt="Product"> 
-											<div class="product-sidebar">
-												<a href="#" class="buy"> <span>BUY ITEM</span>
-												</a> <a href="product-details.html" class="info"> <span>QUICK
-														VIEW</span>
-												</a> <a href="#" class="favorites"> <span>ADD TO
-														FAVORITE</span>
-												</a>
-											</div>
-										</div>
-										<a href="product-details.html" class="product-item_footer">
-											<div
-												class="product-item_title font-additional font-weight-bold text-center text-uppercase">WOMEN
-												DRESS</div>
-											<div
-												class="product-item_price font-additional font-weight-normal customColor">$150.00</div>
-										</a>
-									</div>
-								</div>
+								</s:iterator>
 							</div>
 						</div>
 					</div>

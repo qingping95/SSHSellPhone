@@ -94,6 +94,13 @@
 			<ref bean="userManager" />
 		</property>
 	</bean>
+	
+	<!-- 主页的action -->
+	<bean id="indexAction" class="com.tiny.ssh.action.IndexAction">
+		<property name="userManager">
+			<ref bean="userManager" />
+		</property>
+	</bean>
     <!-- more bean definitions go here -->
 
 </beans>
