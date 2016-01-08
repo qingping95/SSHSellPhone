@@ -22,5 +22,11 @@
         <action name="index" class="indexAction">
         	<result name="success">index.jsp</result>
         </action>
+        <action name="product" class="productAction">
+        	<result name="success">product_details.jsp</result>
+        </action>
+        <action name="searchPhone" class="searchPhoneAction">
+        	<result name="success">searchResult.jsp</result>
+        </action>
     </package>
 </struts>

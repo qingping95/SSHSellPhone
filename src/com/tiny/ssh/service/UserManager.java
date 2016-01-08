@@ -2,6 +2,7 @@ package com.tiny.ssh.service;
 
 import java.util.List;
 
+import com.tiny.ssh.beans.Phone;
 import com.tiny.ssh.beans.User;
 import com.tiny.ssh.forms.UserForm;
 
@@ -13,4 +14,6 @@ public interface UserManager<T> {
     public List<T> querySPObject(String Brand, String model);
     public List<T> querySomePhone(int num);
     public User getUser(String username);
+    public Phone findPhoneByID(int id);
+    public List<T> findPhoneBySearch(String info, String label);
 }

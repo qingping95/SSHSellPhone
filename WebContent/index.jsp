@@ -55,11 +55,20 @@
 			<div class="header-middle">
 				<div class="container relative">
 					<div class="header-search pull-right">
-						<div class="header-search_form">
-							<form class="product-search form-inline" action="#" method="POST">
+						<s:form class="product-search form-inline" action="searchPhone">
+							<div class="header-search_filter">
+			                	<select class="formDropdown font-additional font-weight-normal" name="searchOPT" id="filterby">
+				                  	<option value="brand">Filter By</option>
+				                  	<option value="model">型号</option>
+				                  	<option value="brand">品牌</option>
+			                	</select>
+			                	<i class="fa fa-angle-down customColor"></i>
+			              	</div>
+							<div class="header-search_form">
 								<div class="form-group">
 									<label class="sr-only" for="searchQuery">Product Name
-										...</label> <input type="search"
+										...</label> 
+									<input type="search" name="searchINFO"
 										class="product-search_field font-main font-weight-normal"
 										id="searchQuery" placeholder="搜索产品品牌、型号">
 								</div>
@@ -67,8 +76,8 @@
 									class="product-search_btn hvr-bounce-to-right">
 									<i class="fa fa-search"></i>
 								</button>
-							</form>
-						</div>
+							</div>
+						</s:form>
 					</div>
 				</div>
 			</div>
@@ -101,9 +110,9 @@
 							</div>
 						</div>
 						<div class="main-slider_buttons">
-							<a href="#"
+							<a href="product?phoneID=${phone.proID}"
 								class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_fadeInLeftBig animated before-bg"
-								style="visibility: hidden;color:#000">立即购买</a>
+								style="visibility: hidden;color:#000">立即查看</a>
 						</div>
 					</div>
 				</div>
@@ -123,9 +132,9 @@
 							class="main-slider_title font-additional font-weight-bold text-shadow color-main main-slider_fadeInLeft animated"
 							style="visibility: hidden;">秋天 冬天  2015/2016</h3>
 						<div class="main-slider_buttons">
-							<a href="#"
+							<a href="product?phoneID=${phone.proID}"
 								class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_slideInUp animated before-bg"
-								style="visibility: hidden;">立即购买</a>
+								style="visibility: hidden;">立即查看</a>
 						</div>
 					</div>
 				</div>
@@ -140,9 +149,9 @@
 							</div>
 						</div>
 						<div class="main-slider_buttons">
-							<a href="#"
+							<a href="product?phoneID=${phone.proID}"
 								class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_slideInUp animated before-bg"
-								style="visibility: hidden; color:#000">马上购买</a>
+								style="visibility: hidden; color:#000">立即查看</a>
 						</div>
 					</div>
 				</div>
@@ -183,16 +192,15 @@
 									<div class="isotope-item newproducts popular">
 										<div class="product-item hvr-underline-from-center">
 											<div class="product-item_body">
-												<img class="product-item_image" src="images/products/${phone.proID%14+3}.jpg"
+												<img class="product-item_image" src="images/products/${phone.proID%14+4}.jpg"
 													alt="Product"> 
 												<div class="product-sidebar">
-													<a href="#" class="buy"> <span>立即购买</span></a>
-													<a href="product-details.html" class="info"> 
+													<a href="product?phoneID=${phone.proID}" class="info"> 
 														<span>查看信息</span>
 													</a>
 												</div>
 											</div>
-											<a href="product-details.html" class="product-item_footer">
+											<a href="product?phoneID=${phone.proID}" class="product-item_footer">
 												<div
 													class="product-item_title font-additional font-weight-bold text-center text-uppercase">
 													${phone.brand} ${phone.model}
@@ -209,16 +217,15 @@
 									<div class="isotope-item popular discount">
 										<div class="product-item hvr-underline-from-center">
 											<div class="product-item_body">
-												<img class="product-item_image" src="images/products/${phone.proID%14+3}.jpg"
+												<img class="product-item_image" src="images/products/${phone.proID%14+4}.jpg"
 													alt="Product"> 
 												<div class="product-sidebar">
-													<a href="#" class="buy"> <span>立即购买</span></a>
-													<a href="product-details.html" class="info"> 
+													<a href="product?phoneID=${phone.proID}" class="info">
 														<span>查看信息</span>
 													</a>
 												</div>
 											</div>
-											<a href="product-details.html" class="product-item_footer">
+											<a href="product?phoneID=${phone.proID}" class="product-item_footer">
 												<div
 													class="product-item_title font-additional font-weight-bold text-center text-uppercase">
 													${phone.brand} ${phone.model}
@@ -235,16 +242,15 @@
 									<div class="isotope-item discount newproducts">
 										<div class="product-item hvr-underline-from-center">
 											<div class="product-item_body">
-												<img class="product-item_image" src="images/products/${phone.proID%14+3}.jpg"
+												<img class="product-item_image" src="images/products/${phone.proID%14+4}.jpg"
 													alt="Product"> 
 												<div class="product-sidebar">
-													<a href="#" class="buy"> <span>立即购买</span></a>
-													<a href="product-details.html" class="info"> 
+													<a href="product?phoneID=${phone.proID}" class="info">
 														<span>查看信息</span>
 													</a>
 												</div>
 											</div>
-											<a href="product-details.html" class="product-item_footer">
+											<a href="product?phoneID=${phone.proID}" class="product-item_footer">
 												<div
 													class="product-item_title font-additional font-weight-bold text-center text-uppercase">
 													${phone.brand} ${phone.model}
@@ -290,7 +296,7 @@
 							</div>
 							<a href="#"
 								class="discount-info_link button-border font-additional font-weight-bold customBorderColor text-uppercase hvr-bounce-to-right before-bg">
-								立即购买！</a>
+								查看详细信息！</a>
 						</div>
 					</div>
 				</div>

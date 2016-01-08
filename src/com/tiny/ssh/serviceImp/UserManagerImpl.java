@@ -66,4 +66,16 @@ public class UserManagerImpl<T> implements UserManager<T> {
 		String sql = "select * from phone "+"order by rand() "+"limit "+num;
 		return dao.getObject(sql).addEntity("phone", Phone.class).list();
 	}
+	@Override
+	public Phone findPhoneByID(int id) {
+		// TODO Auto-generated method stub
+		String sql = "select * from phone where proID='"+id+"'";
+		return (Phone)dao.getObject(sql).addEntity("phone", Phone.class).list().get(0);
+	}
+	@Override
+	public List<T> findPhoneBySearch(String info, String label) {
+		// TODO Auto-generated method stub
+		String sql = "select * from phone where "+label+" like '%"+info+"%'";
+		return dao.getObject(sql).addEntity("phone", Phone.class).list();
+	}
 }

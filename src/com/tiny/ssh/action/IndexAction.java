@@ -35,6 +35,7 @@ public class IndexAction extends ActionSupport {
 		session.put("phlist", phlist);
 		List newlist = (List)session.get("phlist");
 		Phone phone = (Phone)newlist.get(0);
+		session.put("product", phone);
 		System.out.println("拿到的信息为："+phone.getBrand());
 		return "success";
 	}

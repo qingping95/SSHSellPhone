@@ -101,6 +101,20 @@
 			<ref bean="userManager" />
 		</property>
 	</bean>
+	
+	<!-- 商品的详细信息 -->
+	<bean id="productAction" class="com.tiny.ssh.action.productAction">
+		<property name="umg">
+			<ref bean="userManager" />
+		</property>
+	</bean>
+	
+	<!-- 搜索结果 -->
+	<bean id="searchPhoneAction" class="com.tiny.ssh.action.SearchPhone">
+		<property name="userManager">
+			<ref bean="userManager" />
+		</property>
+	</bean>
     <!-- more bean definitions go here -->
 
 </beans>
